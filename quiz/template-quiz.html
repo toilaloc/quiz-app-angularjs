@@ -1,0 +1,72 @@
+<div class="container my-5" id="quiz" ng-controller="timeCtrl">
+    <div class="row" ng-show="!inProgess">
+        <div class="col text-center">
+            <button class="btn btn-success" ng-click="start()">Start the Quiz</button> 
+        </div>
+    </div>
+    
+    <div ng-show="inProgess">
+        <div ng-show="quizOver" class="row">
+            <div class="col text-center">
+                <h3>Quiz is over!!!</h3>
+               <p>Điểm bài thi <strong>{{score}}/10</strong><br>
+                   <span ng-if="score < 5">Rất tiếc bạn không vượt qua bài thi</span>
+                   <span ng-if="score >= 5">Chúc mừng bạn đã vượt qua bài thi</span>
+               </p>
+                <button class="btn btn-success" ng-click="startAgain()">Start again</button> <button ng-click="save()" class="btn btn-success">Lưu kết quả</button>
+            </div>
+        </div>
+        <div ng-show="!quizOver">
+            <div class="row">
+                <div class="col text-center">
+                    <h2><i class="fas fa-clock" style="color: #16df7e;" ng-controller="timeCtrl">{{counter | secondsToDateTime | date:'mm:ss'}}</i> <span class="float-right">
+                        <button ng-click="end()" class="btn btn-success">End now</button></span></h2> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card border-info">
+                        <div class="card-header text-white" style="background-color: #16df7e;">
+                            <img src="images/logos/JAAV.png" width="30" class="border border-success rounded-lg" alt="">
+                            <span>{{subjectName}}</span>
+                            <span class="float-right badge badge-dark" style="padding: .28em .7em;">{{id}}/10</span>
+                        </div>
+                        <div class="card-body">
+        
+                            <p class="card-text" style="font-weight: 500;"><span>{{question}}</span>
+                                <hr>
+                                <div class="form-check" ng-repeat="option in options">
+                                    <label class="form-check-label" for="answer">
+                                    <input class="form-check-input" type="radio" name="answer" value="{{option.Id}}">
+                                       {{option.Text}}
+                                    </label>
+                                </div>
+                            </p>
+                        </div>
+                        <style>
+                            .btn-success {
+                                color: #fff;
+                                background-color: #16df7e;
+                                border-color: #16df7e;
+                            }
+                            .border-info {
+                                border-color: #16df7e!important;
+                            }
+                        </style>
+                        <div class="card-footer">
+                            <div ng-show="answerMode"><button ng-click="checkAnswer()" class="btn btn-success">Submit</button></div>
+                            <div ng-show="!answerMode"><button ng-click="nextQuestion()" class="btn btn-success">Next</button>
+                                <span ng-show="correctAns" style="color:#16df7e;"><strong>Right!</strong></span>
+                                <span ng-show="!correctAns" style="color: red;"><strong>Wrong!</strong></span>
+                            </div>
+                           
+                            <span class="float-right badge badge-success"
+                                style="padding: .28em .7em; font-size: 90%; font-weight: 500;">Điểm:
+                                {{score}}/10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+</div>

@@ -1,0 +1,40 @@
+<!-- ======= Breadcrumbs ======= -->
+    <section id="category" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Danh sách khóa học</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Danh sách khóa học</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section id="services" class="services section-bg"> 
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="margin-bottom: 50px;" ng-repeat="subject in list_subject|limitTo:4:begin">
+            <div class="icon-box" style=" border: 1px solid #14c871; padding: 20px 20px;">
+              <div class="icon"><img class="bx bxl-dribbble" src="./logos/{{subject.Logo}}"></div>
+              <h4><a href="#!quiz/{{subject.Id}}/{{subject.Name}}">{{subject.Name}}</a></h4>
+              <p>Bài thi trắc nghiệm môn {{subject.Name}} được cập nhật những câu hỏi sát với công nghệ hiện tại.</p>
+              <a style="margin-top: 20px;" class="btn btn-success" href="#!quiz/{{subject.Id}}/{{subject.Name}}">TEST NOW</a>
+            </div>
+          </div>
+
+          <div style="padding-left: 70px;" class="offset-lg-4"> 
+            <button type="button" ng-click="first()" class="btn btn-success">First</button> 
+           <button type="button" ng-click="prev()" class="btn btn-success">Prev</button> 
+                                <button type="button" ng-click="next()" class="btn btn-success">Next</button> 
+                                <button type="button" ng-click="last()" class="btn btn-success">Last</button> </div>
+        </div>
+      </div>
+    </section>
+
+ 

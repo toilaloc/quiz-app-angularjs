@@ -1,0 +1,298 @@
+{
+  "students": [
+    {
+      "username": "teonv",
+      "password": "nguyenvanteo",
+      "fullname": "Nguyễn Văn Tèo",
+      "email": "teonv@fpt.edu.vn",
+      "gender": "true",
+      "birthday": "1995-12-21",
+      "schoolfee": "1500000",
+      "marks": "0",
+      "id": "teo",
+      "quizHistory": {
+        "quizName": "Lập trình Android cơ bản",
+        "quizId": "ADBS",
+        "quizMark": 1
+      }
+    },
+    {
+      "username": "pheonv",
+      "password": "iloveyou",
+      "fullname": "Nguyễn Văn Chí Phèo",
+      "email": "pheonv@fpt.edu.vn",
+      "gender": "true",
+      "birthday": "1985-10-11",
+      "schoolfee": "2500000",
+      "marks": "0",
+      "id": "pheo"
+    },
+    {
+      "username": "nopt",
+      "password": "iloveyou",
+      "fullname": "Phạm Thị Nở",
+      "email": "nopt@fpt.edu.vn",
+      "gender": "false",
+      "birthday": "1993-05-15",
+      "schoolfee": "2000000",
+      "marks": "0",
+      "id": "no"
+    },
+    {
+      "username": "nopt",
+      "password": "iloveyou",
+      "fullname": "Phạm Thị Nở",
+      "email": "nopt@fpt.edu.vn",
+      "gender": "false",
+      "birthday": "1993-05-15",
+      "schoolfee": "2000000",
+      "marks": "0",
+      "id": "1"
+    },
+    {
+      "username": "lexuanlocc",
+      "password": "fdffds",
+      "fullname": "dsfdfdf",
+      "email": "fdfdfdfdf@gmail.com",
+      "gender": "true",
+      "birthday": "1111-11-10T16:53:20.000Z",
+      "schoolfee": "fdfd",
+      "marks": "0",
+      "id": "IJ37GNh"
+    },
+    {
+      "username": "hiimloc",
+      "password": "123456",
+      "fullname": "Lộc Nè Hi Hi",
+      "email": "hiimloc@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "123456",
+      "marks": "0",
+      "id": "8FTx04f"
+    },
+    {
+      "username": "toilalocne",
+      "password": "111111",
+      "fullname": "Lê Xuân Lộc Mới",
+      "email": "denvau@gmail.com",
+      "gender": "true",
+      "birthday": "1111-11-10T16:53:20.000Z",
+      "schoolfee": "345678",
+      "marks": "0",
+      "id": "rAlZX2K"
+    },
+    {
+      "username": "songoku",
+      "password": "123456",
+      "fullname": "Son Go Ku",
+      "email": "songokuuuuu@gmail.com",
+      "gender": "false",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "10000000",
+      "marks": "0",
+      "id": "jd0VHSP"
+    },
+    {
+      "username": "leesin",
+      "password": "123",
+      "fullname": "LeeSin",
+      "email": "leesin@gmail.com",
+      "gender": "true",
+      "birthday": "1998-11-10T17:00:00.000Z",
+      "schoolfee": "1000000",
+      "marks": "0",
+      "id": "oAGy_nm"
+    },
+    {
+      "username": "toilaxuanloc",
+      "password": "toilaloc",
+      "fullname": "Lộc",
+      "email": "loclx@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "1000000",
+      "marks": "0",
+      "id": "NWldX62"
+    },
+    {
+      "username": "xuanloc",
+      "password": "123",
+      "fullname": "xuan loc",
+      "email": "xuanloc@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "1000",
+      "marks": "0",
+      "id": "5wM85nt"
+    },
+    {
+      "username": "toilalexuanloc",
+      "password": "xuanloc",
+      "fullname": "Xuân Lộc",
+      "email": "xuanloclee@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "20000000",
+      "marks": "0",
+      "id": "_yYvrSd"
+    },
+    {
+      "username": "xuanloclee",
+      "password": "xuanlocle",
+      "fullname": "Xuân Lộc Lê",
+      "email": "xuanlocleeeee@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "200000000",
+      "marks": "0",
+      "id": "AUf23qI",
+      "quizHistory": {
+        "quizName": "SQL Server",
+        "quizId": "DBAV",
+        "quizMark": 1
+      }
+    },
+    {
+      "username": "human",
+      "password": "123456",
+      "fullname": "Huuuumannnnn",
+      "email": "ahuman@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "1990999",
+      "marks": "0",
+      "id": "XH6x912"
+    },
+    {
+      "username": "hibarbon",
+      "password": "xuanloc",
+      "fullname": "Hi Bon Sau",
+      "email": "hibonsau@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "22222222222",
+      "marks": "0",
+      "id": "HXE9TcV"
+    },
+    {
+      "username": "nguoidung",
+      "password": "nguoidungmoi",
+      "fullname": "Toi la nguoi dung moi",
+      "email": "nguoidungmoi@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "9999999",
+      "marks": "0",
+      "id": "u_Lpabv"
+    },
+    {
+      "username": "nguoidungmau",
+      "password": "nguoidungmau",
+      "fullname": "Người Dùng Mẫu Mới",
+      "email": "nguoidungmaumoi@gmail.com",
+      "gender": "true",
+      "birthday": "2000-09-10T17:00:00.000Z",
+      "schoolfee": "322222200",
+      "marks": "0",
+      "id": "vI2JSVW"
+    },
+    {
+      "username": "nguyentientrung",
+      "password": "123456",
+      "fullname": "Nguyễn Tiến Trung",
+      "email": "trungnguyen@gmail.com",
+      "gender": "true",
+      "birthday": "2000-12-30T17:00:00.000Z",
+      "schoolfee": "999999999",
+      "marks": "0",
+      "id": "dV6FCeI"
+    }
+  ],
+  "marks": [
+    {
+      "idStudent": "teo",
+      "quizName": "SQL Server",
+      "quizId": "DBAV",
+      "quizMark": 1,
+      "id": "AXSSS"
+    },
+    {
+      "idStudent": "AUf23qI",
+      "quizName": "SQL Server",
+      "quizId": "DBAV",
+      "quizMark": 2,
+      "id": "Pwsnt6c"
+    },
+    {
+      "idStudent": "AUf23qI",
+      "quizName": "SQL Server",
+      "quizId": "DBAV",
+      "quizMark": 1,
+      "id": "lGBtG8M"
+    },
+    {
+      "idStudent": "AUf23qI",
+      "quizName": "Xây dựng trang web",
+      "quizId": "WEBU",
+      "quizMark": 5,
+      "id": "BM1xaUc"
+    },
+    {
+      "idStudent": "AUf23qI",
+      "quizName": "Lập trình Android cơ bản",
+      "quizId": "ADBS",
+      "quizMark": 1,
+      "id": "wxEhWHd"
+    },
+    {
+      "idStudent": "XH6x912",
+      "quizName": "Xây dựng trang web",
+      "quizId": "WEBU",
+      "quizMark": 1,
+      "id": "TleAsCA"
+    },
+    {
+      "idStudent": "HXE9TcV",
+      "quizName": "Lập trình JavaScript",
+      "quizId": "JSPR",
+      "quizMark": 1,
+      "id": "BP-KcCe"
+    },
+    {
+      "idStudent": "u_Lpabv",
+      "quizName": "Xây dựng trang web",
+      "quizId": "WEBU",
+      "quizMark": 1,
+      "id": "kai_SFd"
+    },
+    {
+      "idStudent": "vI2JSVW",
+      "quizName": "Lập trình JavaScript",
+      "quizId": "JSPR",
+      "quizMark": 4,
+      "id": "CvJJEF7"
+    },
+    {
+      "idStudent": "vI2JSVW",
+      "quizName": "Lập trình Android cơ bản",
+      "quizId": "ADBS",
+      "quizMark": 5,
+      "id": "vMfb2_9"
+    },
+    {
+      "idStudent": "dV6FCeI",
+      "quizName": "Lập trình JavaScript",
+      "quizId": "JSPR",
+      "quizMark": 3,
+      "id": "9JwoIMa"
+    },
+    {
+      "idStudent": "dV6FCeI",
+      "quizName": "SQL Server",
+      "quizId": "DBAV",
+      "quizMark": 2,
+      "id": "t4qQMF_"
+    }
+  ]
+}

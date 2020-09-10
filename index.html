@@ -1,1 +1,169 @@
-<p>Halaa</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tôi Tự Học - Làm trắc nghiệm lập trình miễn phí</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="https://code.angularjs.org/1.7.8/angular-cookies.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body ng-app="myApp">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="#/">Tôi Tự Học</a></h1>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul ng-controller="userCtrl">
+          <li><a href="#!/">Trang chủ</a></li>
+          <li><a href="#!about">Giới thiệu</a></li>
+          <li><a href="#!category">Khóa học</a></li>
+         <!-- <li><a href="#!quiz">Trắc nghiệm</a></li>--> 
+          <li><a href="#!contact">Liên hệ</a></li>
+         
+          <li ng-show="show"><a href="#!signin" >Đăng nhập</a></li>
+          <li ng-show="show"><a href="#!signup">Đăng ký</a></li>
+           <li ng-show="!show" class="drop-down">Hi, {{user.username}}
+            <ul>
+              <li><a href="#!infor/{{user.id}}">Cập nhật thông tin</a></li>
+              <li><a href="#!password/{{user.id}}">Đổi mật khẩu</a></li>
+              <li><a href="#!forgot">Quên mật khẩu</a></li>
+              <li><a href="#!history/{{user.id}}">Lịch sử thi</a></li>
+              <li><a ng-click="logout()">Đăng xuất</a></li>
+              </ul>
+           </li>
+           <li ng-show="!show"><a href="#!/list">Danh sách</a></li>
+          <script>
+            app.controller("userCtrl", function($scope,$cookies){
+              $scope.user = $cookies.getObject("user");
+              $scope.show = true;
+              if($scope.user) {
+                $scope.show = false;
+              };
+              $scope.logout = function() {
+                $cookies.remove("user");
+                window.location.href="index.html#!signin";
+                location.reload();
+              }
+            });
+          </script>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Hệ thống trắc nghiệm lập trình miễn phí 2020</h1>
+          <h2>Với đội ngũ giảng viên trẻ và đầy năng động kèm những bài học luôn luôn cập nhật mới</h2>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started scrollto">Đăng ký học</a>
+            <a href="https://www.youtube.com/watch?v=rkPUcfKV9Ls&list=PLFPekWzEN9zOGsZuYlKQq3gBHijaGge73&index=11&t=742s" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main>
+    <hr>
+    <ng-view></ng-view>
+    <hr>
+    <div ng-show="loading" class="pull-right label lab-info">Loading...</div>
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Tôi tự học</h3>
+            <p>Hãy trải nghiệm những khóa học miễn phí trên Tôi Tự Học ngay bây giờ.</p>
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Tôi tự học</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://fb.com/ahumanbydefault">Default Human</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

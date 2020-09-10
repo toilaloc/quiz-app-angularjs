@@ -1,0 +1,42 @@
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="contact" id="signin">
+        <div class="container">
+          <div class="section-title">
+            <span>Đăng nhập</span>
+            <h2>Đăng nhập</h2>
+            <p>Vui lòng nhập đầy đủ và chính xác thông tin</p>
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-12 mt-12 mt-lg-0 d-flex align-items-stretch">
+              <form class="php-email-form" name="frmLogin">
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="name">Tên đăng nhập</label>
+                    <input type="text" class="form-control" ng-model="username" name="txtUsername" id="username" required/>
+                    <span ng-show="frmLogin.txtUsername.$invalid">Vui lòng nhập tên đăng nhập</span>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="name">Mật khẩu</label>
+                    <input type="password" name="txtPassword" ng-model="password" class="form-control" id="password" required/>
+                    <span ng-show="frmLogin.txtPassword.$invalid">Vui lòng nhập password</span>
+                  </div>
+                </div>
+                <div class="text-center"><button type="submit" ng-click="login()">Đăng nhập</button>  <a style="padding-left: 10px;" href="index.html#!forgot">Quên mật khẩu?</a></div>
+               
+              </form>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+<!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    
+    <!-- End Portfolio Details Section -->
+
+  

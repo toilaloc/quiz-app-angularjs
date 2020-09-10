@@ -1,0 +1,19 @@
+<div class="container">
+    <h2 align="center">Lịch sử kiểm tra</h2>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Môn học</th>
+        <th scope="col">Điểm</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="history in list_history">
+        <td>{{history.quizId}}</td>
+        <td>{{history.quizName}}</td>
+        <td>{{history.quizMark}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,15 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "Fake API",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "json:server": "json-server --watch dbStudents.json"
+  },
+  "author": "",
+  "license": "ISC"
+}

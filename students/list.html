@@ -1,0 +1,46 @@
+<section id="portfolio-details" class="portfolio-details">
+   <div style="padding-left:50px;">
+  <h2>Danh sách người dùng hệ thống</h2><br>
+  <table id="customers">
+    <tr>
+      <th>Họ và tên</th>
+      <th>Tên đăng nhập</th>
+      <th>Email</th>
+      <th>Ngày sinh</th>
+      <th>Điểm</th>
+      <th>Học phí</th>
+    </tr>
+    <tr ng-repeat="student in students">
+      <td>{{student.fullname}}</td>
+      <td>{{student.username}}</td>
+      <td>{{student.email}}</td>
+      <td>{{student.birthday}}</td>
+      <td>{{student.marks}}</td>
+      <td>{{student.schoolfee}}</td>
+    </tr>
+  </table>
+  </div>
+  </section>
+<style>
+    #customers {
+  border-collapse: collapse;
+  width: 96%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>

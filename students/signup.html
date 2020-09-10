@@ -1,0 +1,73 @@
+<!-- ======= Breadcrumbs ======= -->
+    <section  class="contact" id="signup">
+        <div class="container">
+  
+          <div class="section-title">
+            <span>Đăng ký</span>
+            <h2>Đăng ký</h2>
+            <p>Vui lòng nhập đầy đủ và chính xác thông tin</p>
+          </div>
+  
+          <div class="row">
+
+            <div class="col-lg-12 mt-12 mt-lg-0 d-flex align-items-stretch">
+              <form class="php-email-form" name="frmRegister">
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="name">Tên đăng nhập</label>
+                    <input type="text" class="form-control" name="txtUsername" id="fullname" ng-model="users.username" required/>
+                    <span ng-show="frmRegister.txtUsername.$invalid">Vui lòng nhập tên đăng nhập</span>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" class="form-control" name="txtPassword" ng-model="users.password" required/>
+                    <span ng-show="frmRegister.txtPassword.$invalid">Vui lòng nhập mật khẩu</span>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" class="form-control" name="txtFullname" id="fullname" ng-model="users.fullname" required/>
+                    <span ng-show="frmRegister.txtFullname.$invalid">Vui lòng nhập họ và tên</span>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="txtEmail" id="email" ng-model="users.email" required/>
+                    <span ng-show="frmRegister.txtEmail.$invalid">Địa chỉ email không hợp lệ</span>
+                    <!-- <div class="validate"></div> -->  
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="birthday">Ngày sinh</label>
+                    <input type="date" class="form-control" name="txtBirthday" id="birthday" ng-model="users.birthday" required/>
+                    <span ng-show="frmRegister.txtBirthday.$invalid">Vui lòng nhập ngày sinh</span>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label style="padding-right: 20px;" for="gender">Giới tính</label>
+                    <div class="form-check form-check-inline">
+                    <input  class="form-check-input" type="radio" name="txtGender" id="gender" ng-model="users.gender" value="true" required/>
+                    <label class="form-check-label">Nam</label>
+                    </div>
+                   <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="txtGender" id="gender" ng-model="users.gender"  value="false" required/>
+                    <label class="form-check-label" for="inlineRadio1">Nữ</label>
+                  </div>
+                  <span ng-show="frmRegister.txtGender.$invalid">Vui lòng chọn giới tính</span>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="schoolfee">Học phí</label>
+                  <input type="text" name="txtSchoolfee" class="form-control" id="schoolfee" ng-model="users.schoolfee" required/>
+                  <input type="hidden" name="marks" class="form-control" id="marks" ng-model="users.marks" value="0"/>
+                  <span ng-show="frmRegister.txtSchoolfee.$invalid">Vui lòng nhập học phí</span>
+                </div>
+              </div>
+                <div class="text-center"><button type="submit" ng-click="addUser()">Đăng ký</button></div>
+              </form>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+<!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    
+    <!-- End Portfolio Details Section -->
